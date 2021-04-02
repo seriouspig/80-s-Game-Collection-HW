@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-align:center;
+    margin: auto;
+    
+}
+
+
+
+.game-list-item {
+    background-color: blue;
+}
+
+.added-title {
+    color: red;
+}
+
+.added-year {
+    color: greenyellow;
+}

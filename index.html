@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My 80's retro collection</h1>   
+    <h2>Add a game to the list:</h2> 
+    <form id="new-game-form">
+
+        <div class="form-item">
+            <label for="title" class="primary">TITLE:</label>
+            <input type="text" id="title" required/><br>
+        </div>
+
+        <div class="form-item">
+            <label for="year" class="primary">YEAR:</label>
+            <select  id="year">
+                <option disabled selected>Choose Publish Year</option>
+                <option value="1980">1980</option>
+                <option value="1981">1981</option>
+                <option value="1982">1982</option>
+                <option value="1983">1983</option>
+                <option value="1984">1984</option>
+                <option value="1985">1986</option>
+                <option value="1986">1986</option>
+                <option value="1987">1987</option>
+                <option value="1988">1988</option>
+                <option value="1989">1989</option>
+            </select><br>
+        </div>
+
+        <div class="form-item">
+            <label for="developer" class="primary">DEVELOPER:</label>
+            <input type="text" id="developer" required/><br>
+        </div>
+
+
+        <p>PLATFORM:</p>
+        <div class="form-item">
+            <input type="checkbox" name="platform" id="platform1" value="c64">
+            <label for="platform">C-64</label><br>
+            <input type="checkbox" name="platform" id="platform2" value="amiga">
+            <label for="platform">Amiga</label><br>
+            <input type="checkbox" name="platform" id="platform3" value="snes">
+            <label for="platform">SNES</label><br>
+        </div>
+
+        <p>GENRE</p>
+        <div class="form-item">
+            <input type="radio" id="ation" name="genre" value="action">
+            <label for="action">Action</label><br>
+            <input type="radio" id="rpg" name="genre" value="rpg">
+            <label for="action">RPG</label><br>
+            <input type="radio" id="puzzle" name="genre" value="puzzle">
+            <label for="action">Puzzle</label><br>
+        </div>
+
+        <input type="submit" value="ADD GAME">
+    </form>
+
+    <button id="delete-all">DELETE ALL</button>
+
+    <h2>GAME LIST:</h2>
+    <ul id="game-list"></ul>
+
+</body>
+</html>
