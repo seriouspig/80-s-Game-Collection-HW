@@ -18,12 +18,12 @@
 
         <div class="form-item">
             <label for="title" class="primary">TITLE:</label>
-            <input type="text" id="title" required/><br>
+            <input type="text" id="title" class="input-box" required/><br>
         </div>
 
         <div class="form-item">
             <label for="year" class="primary">YEAR:</label>
-            <select  id="year">
+            <select  id="year" class="input-box">
                 <option disabled selected>Choose Publish Year</option>
                 <option value="1980">1980</option>
                 <option value="1981">1981</option>
@@ -40,11 +40,12 @@
 
         <div class="form-item">
             <label for="developer" class="primary">DEVELOPER:</label>
-            <input type="text" id="developer" required/><br>
+            <input type="text" id="developer" class="input-box" required/><br>
         </div>
 
 
         <p>PLATFORM:</p>
+        <div id="genre-wrapper">
         <div class="form-item">
             <input type="checkbox" name="platform" id="platform1" value="c64">
             <label for="platform">C-64</label><br>
@@ -52,9 +53,23 @@
             <label for="platform">Amiga</label><br>
             <input type="checkbox" name="platform" id="platform3" value="snes">
             <label for="platform">SNES</label><br>
+            <input type="checkbox" name="platform" id="platform4" value="intelivission">
+            <label for="platform">Intelivission</label><br>
+            <input type="checkbox" name="platform" id="platform5" value="ZX-spectrum">
+            <label for="platform">ZX Spectrum</label><br>
+            <input type="checkbox" name="platform" id="platform6" value="NES">
+            <label for="platform">NES</label><br>
+            <input type="checkbox" name="platform" id="platform7" value="AtariST">
+            <label for="platform">Atari ST</label><br>
+            <input type="checkbox" name="platform" id="platform8" value="Sega-Master-System">
+            <label for="platform">Sega Master System</label><br>
+            <input type="checkbox" name="platform" id="platform9" value="Atari-Lynx">
+            <label for="platform">Atari Lynx</label><br>
+        </div>
         </div>
 
-        <p>GENRE</p>
+        <p>GENRE:</p>
+        <div id="genre-wrapper">
         <div class="form-item">
             <input type="radio" id="ation" name="genre" value="action">
             <label for="action">Action</label><br>
@@ -62,9 +77,20 @@
             <label for="action">RPG</label><br>
             <input type="radio" id="puzzle" name="genre" value="puzzle">
             <label for="action">Puzzle</label><br>
+            <input type="radio" id="platformer" name="genre" value="platformer">
+            <label for="action">Platformer</label><br>
+            <input type="radio" id="shooter" name="genre" value="shooter">
+            <label for="action">Shooter</label><br>
+            <input type="radio" id="simulation" name="genre" value="simulation">
+            <label for="action">Simulation</label><br>
+            <input type="radio" id="strategy" name="genre" value="strategy">
+            <label for="action">Strategy</label><br>
+            <input type="radio" id="sports" name="genre" value="sports">
+            <label for="action">Sports</label><br>
+        </div>
         </div>
 
-        <input type="submit" value="ADD GAME">
+        <input type="submit" value="ADD GAME" class="button">
     </form>
 
     <button id="delete-all">DELETE ALL</button>

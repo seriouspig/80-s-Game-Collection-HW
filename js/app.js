@@ -46,14 +46,18 @@ const createGameListItem = function (form) {
 
     const developer = document.createElement('p');
     developer.textContent = `Developed by: ${form.developer.value}`;
+    developer.classList.add('added-developer');
     gameListItem.appendChild(developer);
 
     const platform = document.createElement('p');
     platform.textContent = `Released on: ${getSelectedCheckboxValues('platform')}`;
-    gameListItem.appendChild(platform); 
+    platform.classList.add('added-platform'); 
+    gameListItem.appendChild(platform);
+    
 
     const genre = document.createElement('p');
     genre.textContent = `Genre: ${form.genre.value}`;
+    genre.classList.add('added-genre');
     gameListItem.appendChild(genre);
 
     return gameListItem;
